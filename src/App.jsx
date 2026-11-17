@@ -85,7 +85,7 @@ export default function App() {
               <div className="field"><CalendarDays size={18} /><input id="date" type="date" name="date" value={form.date} onChange={update} min={new Date().toISOString().split('T')[0]} /></div>
 
               <button className="submit" type="submit"><MessageCircle size={19} /> Submit booking on WhatsApp</button>
-              <p className="form-note">Your details will be sent to the owner via WhatsApp.</p>
+              <p className="form-note">Your details will be sent via WhatsApp.</p>
             </form>
           </section>
         </div>
