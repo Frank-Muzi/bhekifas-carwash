@@ -39,7 +39,6 @@ export default function App() {
           <a href="#services">Our Services</a>
           <a href="#booking">Book Now</a>
         </nav>
-        <a className="nav-phone" href="tel:+27824398434"><Phone size={18} /> 082 439 8434</a>
       </header>
 
       <section className="hero" id="home">
