@@ -53,7 +53,7 @@ export default function App() {
             <div className="features" id="services">
               <div><Droplets /><strong>Spotless<br />clean</strong></div>
               <div><ShieldCheck /><strong>Reliable<br />service</strong></div>
-              <div><Sparkles /><strong>Fresh and shiny<br /></strong></div>
+              <div><Sparkles /><strong>Fresh and <br />shiny</strong></div>
             </div>
             <a className="cta" href="#booking"><CalendarDays size={19} /> Get a quote & book now</a>
           </div>
