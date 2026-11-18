@@ -16,7 +16,8 @@ nav a:hover, .nav-phone:hover { color: #f5c400; }
 .hero { position: relative; min-height: 690px; overflow: hidden; display: flex; align-items: center; }
 .hero-bg { position: absolute; inset: 0; background-image: url('/images/car-water-background.jpg'); background-size: cover; background-position: center 54%; transform: scale(1.02); }
 .hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(3,7,12,.97) 0%, rgba(3,7,12,.88) 27%, rgba(3,7,12,.28) 63%, rgba(3,7,12,.78) 100%), linear-gradient(0deg, rgba(3,7,12,.55), transparent 35%); }
-.hero-content { width: min(1240px, 90%); margin: 0 auto; position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(330px, .75fr); align-items: center; gap: clamp(35px, 6vw, 90px); padding: 55px 0; }
+.hero-content { width: min(1240px, 90%); margin: 0 auto; position: relative; z-index: 1; padding: 55px 0; }
+.intro { max-width: 720px; }
 .eyebrow { color: #f5c400; font-size: 11px; font-weight: 800; letter-spacing: 2px; display: flex; align-items: center; gap: 9px; }
 .eyebrow span { width: 27px; height: 2px; background: #f5c400; }
 h1 { font-family: 'Barlow Condensed', Impact, sans-serif; font-size: clamp(48px, 6.3vw, 82px); line-height: .94; letter-spacing: -1px; margin: 20px 0 12px; max-width: 690px; }
@@ -29,11 +30,27 @@ h1 em { display: block; color: #f5c400; font-style: normal; }
 .cta, .submit { display: inline-flex; justify-content: center; align-items: center; gap: 10px; background: #f5c400; color: #111; border: 0; border-radius: 8px; padding: 15px 22px; font-weight: 800; font-size: 14px; cursor: pointer; transition: transform .2s, background .2s; }
 .cta:hover, .submit:hover { background: #ffd633; transform: translateY(-2px); }
 .booking-card { background: rgba(8, 11, 16, .94); border: 1.5px solid #f5c400; border-radius: 16px; padding: 27px; box-shadow: 0 18px 55px rgba(0,0,0,.42); backdrop-filter: blur(10px); }
+.booking-section { padding: 78px 5% 88px; background: #080a0d; border-top: 1px solid #252b34; }
+.booking-section-heading { margin: 0 auto 30px; text-align: center; }
+.booking-section-heading .eyebrow { justify-content: center; }
+.booking-section-heading h2 { margin: 13px 0 0; font-family: 'Barlow Condensed', Impact, sans-serif; font-size: clamp(36px, 5vw, 58px); line-height: 1; text-transform: uppercase; }
+.booking-section-heading h2 em { color: #f5c400; font-style: normal; }
+.booking-section .booking-card { width: min(100%, 560px); margin: 0 auto; }
 .form-heading { display: flex; align-items: center; gap: 13px; margin-bottom: 22px; color: #f5c400; }
 .form-heading h3 { margin: 0 0 5px; color: #fff; font-size: 20px; }
 .form-heading p { margin: 0; color: #aeb6c2; font-size: 12px; }
 form { display: flex; flex-direction: column; gap: 9px; }
 form label { color: #e5e7eb; font-size: 12px; font-weight: 700; margin-top: 4px; }
+.location-label { color: #e5e7eb; font-size: 12px; font-weight: 700; margin-top: 4px; }
+.location-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.location-option { min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 8px; border: 1px solid #374151; border-radius: 7px; background: #141a23; color: #d1d5db; font: inherit; font-size: 11px; font-weight: 700; cursor: pointer; transition: border-color .2s, color .2s, background .2s; }
+.location-option svg { flex: 0 0 auto; color: #f5c400; }
+.location-option:hover, .location-option.active { border-color: #f5c400; color: #f5c400; background: #1c2028; }
+.location-result { padding: 12px; border: 1px solid #374151; border-radius: 7px; background: #141a23; color: #aeb6c2; font-size: 12px; line-height: 1.5; }
+.location-result p { margin: 0; }
+.location-help { margin: 0; color: #aeb6c2; font-size: 11px; }
+.location-result a { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; color: #f5c400; font-weight: 700; }
+.location-result a:hover { color: #ffd633; }
 .optional { color: #8b95a3; font-weight: 400; }
 .field { min-height: 46px; display: flex; align-items: center; gap: 10px; border: 1px solid #374151; background: #141a23; border-radius: 7px; padding: 0 12px; color: #f5c400; }
 .field input { width: 100%; min-width: 0; color: #fff; background: transparent; border: 0; outline: 0; font: inherit; font-size: 13px; }
@@ -47,15 +64,33 @@ footer a, footer span:not(.footer-divider) { display: flex; align-items: center;
 footer svg { color: #f5c400; }
 .tagline { color: #f5c400; font-weight: 800; font-style: italic; }
 .footer-divider { width: 1px; height: 25px; background: #4b5563; }
+.services-gallery { padding: 78px 5% 88px; background: #0e1218; border-top: 1px solid #252b34; }
+.services-heading { max-width: 760px; margin: 0 auto 34px; text-align: center; }
+.services-heading .eyebrow { justify-content: center; }
+.services-heading h2 { margin: 13px 0 10px; font-family: 'Barlow Condensed', Impact, sans-serif; font-size: clamp(36px, 5vw, 58px); line-height: 1; text-transform: uppercase; }
+.services-heading h2 em { color: #f5c400; font-style: normal; }
+.services-heading > p:last-child { margin: 0; color: #aeb6c2; font-size: 14px; }
+.service-carousel { position: relative; width: min(100%, 1050px); aspect-ratio: 16 / 8.5; min-height: 280px; margin: 0 auto; overflow: hidden; border: 1px solid #f5c400; border-radius: 15px; background: #080a0d; box-shadow: 0 18px 55px rgba(0,0,0,.4); }
+.service-image { display: block; width: 100%; height: 100%; object-fit: cover; animation: service-image-slide .5s ease both; }
+@keyframes service-image-slide { from { opacity: .7; transform: translateX(4%); } to { opacity: 1; transform: translateX(0); } }
+.carousel-arrow { position: absolute; top: 50%; display: grid; place-items: center; width: 46px; height: 46px; transform: translateY(-50%); border: 1px solid rgba(245,196,0,.8); border-radius: 50%; background: rgba(8,10,13,.78); color: #f5c400; cursor: pointer; transition: background .2s, color .2s; }
+.carousel-arrow:hover { background: #f5c400; color: #111; }
+.carousel-previous { left: 18px; }
+.carousel-next { right: 18px; }
+.carousel-pagination { position: absolute; left: 50%; bottom: 19px; display: flex; gap: 9px; transform: translateX(-50%); padding: 9px 12px; border-radius: 20px; background: rgba(8,10,13,.75); }
+.carousel-dot { width: 9px; height: 9px; padding: 0; border: 0; border-radius: 50%; background: #929baa; cursor: pointer; }
+.carousel-dot.active { background: #f5c400; }
+.carousel-count { position: absolute; right: 18px; bottom: 18px; padding: 6px 9px; border-radius: 12px; background: rgba(8,10,13,.75); color: #fff; font-size: 11px; font-weight: 700; }
 
 @media (max-width: 850px) {
   .navbar { padding: 0 5%; height: 72px; }
   .navbar nav { position: static; transform: none; margin: 0 auto; gap: 15px; font-size: 12px; justify-content: center; }
   .nav-phone { font-size: 12px; }
-  .hero-content { grid-template-columns: 1fr; width: min(620px, 90%); gap: 34px; padding: 48px 0; }
+  .hero-content { width: min(800px, 90%); padding: 48px 0; }
   .hero-shade { background: linear-gradient(90deg, rgba(3,7,12,.9), rgba(3,7,12,.55)), linear-gradient(0deg, rgba(3,7,12,.7), transparent); }
-  .booking-card { max-width: 520px; width: 100%; justify-self: center; }
+  .booking-section { padding: 64px 5%; }
   footer { flex-wrap: wrap; justify-content: center; }
+  .services-gallery { padding: 64px 5%; }
 }
 @media (max-width: 560px) {
   .navbar { height: auto; min-height: 70px; flex-wrap: wrap; padding: 13px 5%; gap: 12px; }
@@ -69,7 +104,20 @@ footer svg { color: #f5c400; }
   .description { font-size: 14px; }
   .features { gap: 22px; }
   .booking-card { padding: 21px 17px; }
+  .location-options { gap: 6px; }
+  .location-option { flex-direction: column; gap: 4px; padding: 7px 4px; font-size: 10px; text-align: center; }
   .form-heading h3 { font-size: 18px; }
   footer { flex-direction: column; gap: 12px; text-align: center; }
   .footer-divider { display: none; }
+  .service-carousel { min-height: 240px; aspect-ratio: 4 / 3; border-radius: 11px; }
+  .carousel-arrow { width: 39px; height: 39px; }
+  .carousel-previous { left: 10px; }
+  .carousel-next { right: 10px; }
+  .carousel-pagination { bottom: 13px; gap: 7px; padding: 8px 10px; }
+  .carousel-dot { width: 8px; height: 8px; }
+  .carousel-count { right: 10px; bottom: 13px; font-size: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .service-image { animation: none; }
 }
