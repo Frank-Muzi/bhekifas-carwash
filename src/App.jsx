@@ -124,7 +124,7 @@ export default function App() {
       ? `${locationMode === 'live' ? 'Live' : 'Current'} location (${form.location})\nMap: https://www.google.com/maps?q=${locationCoords.latitude},${locationCoords.longitude}`
       : form.location.trim();
     const message = [
-      'Hello BEZUCAL Mobile Car Wash! I would like to request a quote / book a service.',
+      'Hello BEZUCAL Mobile Car Wash! I would like to quote and book a service.',
       '',
       `Name: ${form.name}`,
       `Location: ${locationDetails}`,
