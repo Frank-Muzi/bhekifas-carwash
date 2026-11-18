@@ -154,7 +154,7 @@ export default function App() {
             <p className="eyebrow"><span /> MOBILE CAR WASH • WE COME TO YOU</p>
             <h1>BEZUCAL <em>MOBILE CAR WASH</em></h1>
             <h2>We bring the car wash to you!</h2>
-            <p className="description">Professional mobile car wash services at your convenience! We bring our fully equipped mobile car wash equipment, installed in our vehicle, directly to your location. Enjoy a hassle-free wash starting from R120 while we make your vehicle shine.</p>
+            <p className="description">Professional mobile car wash services, delivered to your doorstep! We bring our fully equipped mobile car wash setup directly to your location, making it easier than ever to keep your vehicle clean and shiny. With washes starting from R120, you can enjoy a convenient, hassle-free service without having to leave your home or workplace. </p>
             <div className="features">
               <div><Droplets /><strong>Spotless<br />clean</strong></div>
               <div><ShieldCheck /><strong>Reliable<br />service</strong></div>
@@ -170,6 +170,8 @@ export default function App() {
           <p className="eyebrow"><span /> OUR SERVICES</p>
           <h2 id="services-title">A closer look at <em>what we do</em></h2>
           <p>Professional car care, brought right to your door.</p>
+          <p>Our current focus is on making everyday vehicle care more convenient, accessible and affordable. Whether your vehicle needs a routine wash or simply a refresh to restore its clean, presentable look, we’re here to make the experience effortless.</p>
+          <p>As we continue to grow, so will our range of services, with a commitment to delivering quality and convenience at every stage.</p>
         </div>
         <div className="service-carousel" aria-label="Our car wash services">
           <img
@@ -274,7 +276,7 @@ export default function App() {
       </section>
 
       <footer>
-        <a href="tel:+27662264635"><Phone size={18} /> 066 226 4635</a>
+        <p className="tagline">Bezucal is a subsidiary of Phefumlela Holdings. Currently managed by BHEKIFA MBUYANE and the car wash started operating 18 October 2026.</p>
         <span className="footer-divider" />
         <span><MapPin size={18} /> Mobile service — we come to you!</span>
         <span className="tagline">Cleaner cars. Happier drives.</span>
