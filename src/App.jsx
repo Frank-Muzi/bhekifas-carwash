@@ -3,13 +3,17 @@ import { CarFront, Droplets, ShieldCheck, MapPin, Phone, CalendarDays, UserRound
 
 const OWNER_WHATSAPP = '27662264635';
 const serviceImages = [
-  '1000996561.jpg',
-  '1000996562.jpg',
-  '1000996563.jpg',
-  '1000996568.jpg',
-  '1000996572.jpg',
-  '1000996573.jpg',
-  '1000996579.jpg',
+  '1.jpg',
+  '2.jpg',
+  '3.jpg',
+  '4.jpg',
+  '5.jpg',
+  '6.jpg',
+  '7.jpg',
+  '8.jpg',
+  '9.jpg',
+  '10.jpg',
+  '11.jpg',
 ];
 
 export default function App() {
@@ -276,7 +280,7 @@ export default function App() {
       </section>
 
       <footer>
-        <p className="tagline">Bezucal is a subsidiary of Phefumlela Holdings. Currently managed by BHEKIFA MBUYANE and the car wash started operating 18 October 2026.</p>
+        <p className="tagline">Bezucal is a subsidiary of Phefumlela Holdings. Currently managed by Bhekifa Mbuyane and the car wash started operating 18 October 2026.</p>
         <span className="footer-divider" />
         <span><MapPin size={18} /> Mobile service — we come to you!</span>
         <span className="tagline">Cleaner cars. Happier drives.</span>
