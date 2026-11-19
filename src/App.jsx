@@ -124,7 +124,7 @@ export default function App() {
       ? `${locationMode === 'live' ? 'Live' : 'Current'} location (${form.location})\nMap: https://www.google.com/maps?q=${locationCoords.latitude},${locationCoords.longitude}`
       : form.location.trim();
     const message = [
-      'Hello BEZUCAL Mobile Car Wash! I would like to quote and book a service.',
+      'Hello Bhekifas Mobile Car Wash! I would like to quote and book a service.',
       '',
       `Name: ${form.name}`,
       `Location: ${locationDetails}`,
@@ -139,9 +139,9 @@ export default function App() {
   return (
     <main>
       <header className="navbar">
-        <a className="brand" href="#home" aria-label="BEZUCAL Mobile Car Wash home">
+        <a className="brand" href="#home" aria-label="BHEKIFAS Mobile Car Wash home">
           <span className="brand-icon"><CarFront size={35} /></span>
-          <span><strong>BEZUCAL</strong><small>MOBILE CAR WASH</small></span>
+          <span><strong>BHEKIFAS</strong><small>MOBILE CAR WASH</small></span>
         </a>
         <nav>
           <a href="#home">Home</a>
@@ -156,7 +156,7 @@ export default function App() {
         <div className="hero-content">
           <div className="intro">
             <p className="eyebrow"><span /> MOBILE CAR WASH • WE COME TO YOU</p>
-            <h1>BEZUCAL <em>MOBILE CAR WASH</em></h1>
+            <h1>BHEKIFAS <em>MOBILE CAR WASH</em></h1>
             <h2>We bring the car wash to you!</h2>
             <p className="description">Professional mobile car wash services, delivered to your doorstep! We bring our fully equipped mobile car wash setup directly to your location, making it easier than ever to keep your vehicle clean and shiny. With washes starting from R120, you can enjoy a convenient, hassle-free service without having to leave your home or workplace. </p>
             <div className="features">
@@ -280,7 +280,7 @@ export default function App() {
       </section>
 
       <footer>
-        <p className="tagline">Bezucal is a subsidiary of Phefumlela Holdings. Currently managed by Bhekifa Mbuyane and the car wash started operating 18 October 2026.</p>
+        <p className="tagline">Bhekifas mobile car wash is a subsidiary of Phefumlela Holdings. Currently managed by Bhekifa Mbuyane and the car wash started operating 18 October 2026.</p>
         <span className="footer-divider" />
         <span><MapPin size={18} /> Mobile service — we come to you!</span>
         <span className="tagline">Cleaner cars. Happier drives.</span>
